@@ -13,7 +13,7 @@
 ##### App only
 
 ```
-docker run -it -d --name kcdapp2 kcdapp2
+docker run -it -d --network kcd_network --name kcdapp2 kcdapp2
 ```
 
 ##### pg 접속
