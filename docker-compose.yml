@@ -10,9 +10,16 @@ services:
       - TZ=Asia/Seoul
     ports:
       - '5432:5432'
+    networks:
+      - kcd_network
   kcdapp2:
     image: kcdapp2
     container_name: 'kcdapp2'
     command: python3 main.py
     depends_on:
       - postgres
+    networks:
+      - kcd_network
+networks:
+  kcd_network:
+    driver: bridge

@@ -8,3 +8,7 @@
 [2023-12-19 17:05:12,976][INFO|main.py:18] Waiting for getting message from SQS
 [2023-12-19 17:05:13,995][INFO|main.py:18] Waiting for getting message from SQS
 [2023-12-19 17:05:15,010][INFO|main.py:18] Waiting for getting message from SQS
+[2023-12-19 18:03:41,604][INFO|custom_log.py:20] logger created
+[2023-12-19 18:03:42,313][INFO|place.py:21] Getting message from SQS 
+	 >>> {'operation': 'place_kakao_place', 'key': '¹ÙÆ²µå', 'mode': None}
+[2023-12-19 18:03:42,313][INFO|place.py:138] Status_job - InProgress
