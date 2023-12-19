@@ -1,0 +1,18 @@
+version: '3.8'
+services:
+  postgres:
+    image: postgres:13
+    container_name: postgres
+    environment:
+      - POSTGRES_USER=gwchu
+      - POSTGRES_PASSWORD=q1w2e3r4
+      - POSTGRES_DB=kcd
+      - TZ=Asia/Seoul
+    ports:
+      - '5432:5432'
+  kcdapp2:
+    image: kcdapp2
+    container_name: 'kcdapp2'
+    command: python3 main.py
+    depends_on:
+      - postgres
