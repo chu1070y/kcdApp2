@@ -5,7 +5,7 @@ class SeleniumDriver:
     def __init__(self):
         self.options = webdriver.ChromeOptions()
         self.options.add_argument('--headless')
-        # self.options.add_argument('--no-sandbox')
+        self.options.add_argument('--no-sandbox')
         # self.options.add_argument("--start-maximized")
         self.options.add_argument('--window-size=1000,1000')
         self.options.add_argument('--disable-dev-shm-usage')
@@ -16,7 +16,10 @@ class SeleniumDriver:
         from selenium.webdriver.chrome.service import Service as ChromeService
         from webdriver_manager.chrome import ChromeDriverManager
 
-        return webdriver.Chrome(service=ChromeService(ChromeDriverManager(version="114.0.5735.90").install()), options=self.options)
+        return webdriver.Chrome(service=ChromeService(ChromeDriverManager(driver_version='120.0.6099.109').install()), options=self.options)
+
+    # def get_chrome_driver(self):
+    #     return webdriver.Chrome("/usr/src/chrome/chromedriver", options=self.options)
 
 
 if __name__ == "__main__":
@@ -26,3 +29,6 @@ if __name__ == "__main__":
     from time import sleep
     sleep(5)
     driver.quit()
+
+    while True:
+        pass

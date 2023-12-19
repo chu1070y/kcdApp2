@@ -4,7 +4,9 @@
 
 ##### 도커 빌드
 
-```docker build -t kcdapp2 .```
+```
+docker build -t kcdapp2 .
+```
 
 ##### docker compose (App & PostgreSQL)
 
