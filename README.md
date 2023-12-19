@@ -1,6 +1,6 @@
 # 실행방법
 
-> config/config.ini에 호스트명 수정 필요 
+> config/config.ini에 ip주소 변경 필요
 
 ##### 도커 빌드
 
