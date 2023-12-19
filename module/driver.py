@@ -29,6 +29,3 @@ if __name__ == "__main__":
     from time import sleep
     sleep(5)
     driver.quit()
-
-    while True:
-        pass
