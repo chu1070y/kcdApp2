@@ -8,4 +8,9 @@
 
 ```docker-compose -f ./docker-compose.yml up -d```
 
+##### pg 접속
 
+```
+docker exec -it postgres /bin/bash
+psql -U gwchu -d kcd
+```

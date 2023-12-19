@@ -4,7 +4,7 @@ from selenium import webdriver
 class SeleniumDriver:
     def __init__(self):
         self.options = webdriver.ChromeOptions()
-        # self.options.add_argument('--headless')
+        self.options.add_argument('--headless')
         # self.options.add_argument('--no-sandbox')
         # self.options.add_argument("--start-maximized")
         self.options.add_argument('--window-size=1000,1000')
