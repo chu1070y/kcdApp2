@@ -10,7 +10,9 @@ docker build -t kcdapp2 .
 
 ##### docker compose (App & PostgreSQL)
 
-```docker-compose -f ./docker-compose.yml up -d```
+```
+docker-compose -f ./docker-compose.yml up -d
+```
 
 ##### App only
 

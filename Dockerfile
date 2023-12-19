@@ -18,4 +18,4 @@ RUN unzip /tmp/chromedriver.zip chromedriver -d /usr/src/chrome
 
 RUN pip install --no-cache-dir --upgrade -r requirements.txt
 
-CMD python module/driver.py
+CMD python main.py
