@@ -22,4 +22,5 @@ services:
       - kcd_network
 networks:
   kcd_network:
+    name: kcd_network
     driver: bridge
