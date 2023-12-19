@@ -16,7 +16,7 @@ class SeleniumDriver:
         from selenium.webdriver.chrome.service import Service as ChromeService
         from webdriver_manager.chrome import ChromeDriverManager
 
-        return webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()), options=self.options)
+        return webdriver.Chrome(service=ChromeService(ChromeDriverManager(version="114.0.5735.90").install()), options=self.options)
 
 
 if __name__ == "__main__":
